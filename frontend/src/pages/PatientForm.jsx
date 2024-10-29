@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import apiClient from "../utils/apiClient";
+import DentalChart from "../components/dentalchart";
 
 const PatientForm = () => {
   const navigate = useNavigate();
@@ -708,7 +709,7 @@ const PatientForm = () => {
             rows={6}
           />
         </div>
-
+        <DentalChart />
         <button
           type="submit"
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
